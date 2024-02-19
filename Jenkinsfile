@@ -57,8 +57,8 @@ pipeline {
             steps{
 
                 script{
-
-                    bat "docker build -t devopsAssignment3 -f DockerFile ."
+			bat "wsl"
+                    	bat "docker build -t devopsAssignment3 -f Dockerfile ."
 
                 }
 
