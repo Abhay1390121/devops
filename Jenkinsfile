@@ -58,7 +58,7 @@ pipeline {
 
                 script{
 			bat "wsl"
-                    	bat "docker build -t devopsAssignment3 -f Dockerfile ."
+                    	bat "docker build -t devopsassignment3 -f Dockerfile ."
 
                 }
 
@@ -72,7 +72,7 @@ pipeline {
 
                 script{
 
-                    bat "docker run devopsAssignment3."
+                    bat "docker run devopsassignment3."
 
                 }
 
