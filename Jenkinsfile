@@ -50,7 +50,8 @@ pipeline {
             steps{
 
                 script{
-			bat "echo 'image created'"
+			bat "wsl"
+                    	bat "docker build -t devopsassignment3 -f Dockerfile ."
 
                 }
 
@@ -64,7 +65,7 @@ pipeline {
 
                 script{
 
-                    bat "echo 'docker image running.'"
+                    bat "docker run --name devopscontainer -it -p 9494:9494 -d devopsassignment3"
 
                 }
 
