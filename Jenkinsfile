@@ -58,7 +58,7 @@ pipeline {
 
                 script{
 
-                    bat "docker build -t libraryapplication -f DockerFile ."
+                    bat "docker build -t devopsAssignment3 -f DockerFile ."
 
                 }
 
@@ -72,7 +72,7 @@ pipeline {
 
                 script{
 
-                    bat "docker run libraryapplication."
+                    bat "docker run devopsAssignment3."
 
                 }
 
